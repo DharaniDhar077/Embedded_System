@@ -14,6 +14,7 @@ int main() {
     printf("\n Press 1 Addition : %d + %d", a,b);
      printf("\n Press 2 Subtraction : %d - %d", a,b);
       printf("\n Press 3 Multiplication : %d * %d", a,b);
+      printf("\n Press 4 Division : %d / %d", a,b);
       printf(" \n Enter your choice :");
       scanf("%d: \n", &ch);
       switch(ch)
@@ -24,6 +25,14 @@ int main() {
           break;
           case 3: printf("%d \n", a*b);
           break;
+          case 4: printf("%d \n", a/b);
+          break;
+          if(b==0)
+          {
+              printf("Denominator can't be 0");
+          }
+          break;
+          
           default : printf("Invalid Input !");
           break;
       }
